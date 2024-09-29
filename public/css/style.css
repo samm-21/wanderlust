@@ -1,0 +1,263 @@
+body{
+    font-family: "Fira Sans", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    overflow-x: hidden;
+
+   /* for keeping footer at bottom */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dark-body{
+    background-color: midnightblue;
+    color: white;
+}
+.container{
+    flex: 1;
+}
+/* for keeping footer at bottom */
+
+
+
+.navbar{
+    height:5rem;
+    /* overflow: hidden; */
+    background-color: white;
+}
+
+/* all headings */
+.heading{
+    padding: 1rem 0rem !important;
+    text-align: center;
+    margin-bottom:0 !important;
+}
+
+/* icon of wanderlust */
+.fa-route{
+    color: crimson;
+    font-size: xx-large !important;
+}
+
+
+/* navbar */
+.nav-text{
+    color: crimson !important;
+    font-size: x-large !important;
+}
+.nav-link{
+    color: black !important;
+    font-weight: 500 !important;
+    font-size: large !important;
+    align-self: center;
+}
+.navbar-collapse{
+    background-color: white;
+}
+.container-fluid .collapse{
+    justify-content: space-evenly !important;
+}
+/* .form-switch{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+} */
+#dark-mode{
+    font-size: xx-large;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    opacity:0.7;
+    border: none;
+    background-color: transparent;
+}
+#dark-mode:hover{
+    transform: scale(1.07, 1.07);
+    opacity:1;
+}
+.dark-mode:checked{
+    
+}
+.search .form-inline{
+    display: flex;
+    margin:1rem;
+}
+#search-input{
+    margin-right: 0.5rem;
+    width: 25rem !important;
+    border-radius: 18px !important;
+}
+#search-btn{
+    border-radius: 50% !important;
+}
+.sign-log .nav-link{
+    color: crimson !important;
+}
+
+/*footer*/
+.f-info{
+    color: gray;
+    border-top: 1px solid gray;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    position: relative;
+    bottom: 0vh;
+    width: 100%;
+    margin-top: 5rem;
+    background-color: rgb(211, 211, 211, 0.4);
+}
+.f-info div{
+    margin:0.5rem;
+}
+.f-info-socials, .f-info-links {
+    width: 100%;
+}
+.f-info-socials i {
+    font-size: large;
+}
+.f-info-socials i:hover{
+    color: black;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: gray;
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* all cards */
+.card-row{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    /* justify-content: space-evenly; */
+    justify-content: center !important;
+    align-items: center;
+}
+
+/* all listings */
+/* single card */
+.one-card-container{
+    display:flex;
+    justify-content: center;
+}
+.all-card{
+    text-align: center;
+    margin: 1.2em !important;
+    border-radius: 2rem !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 30em !important;
+    width: 21em !important;
+    padding: 0rem 1rem;
+}
+.all-card:hover{
+    transform: scale(1.03, 1.03);
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 10px;
+    border: 0.2px solid lightgray;
+}
+.card-row a{
+    text-decoration: none;
+}
+.card-img-top{
+    margin-top: 1rem !important;
+    border-radius: 2rem !important;  
+    height: 70%;
+    object-fit: cover;
+}
+.all-card .card-text{
+    font-size: large;
+}
+
+/* all btns */
+.btn-dark{
+    background-color: crimson !important;
+    border: none !important;
+}
+
+
+
+/*show*/
+.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.show-card{
+    border-radius: 3rem !important;
+    padding: 1rem !important;
+    margin-bottom: 5rem;
+}
+.show-card li{
+    font-size: large;
+}
+.show-btns{
+    display: flex !important;
+    justify-content: space-evenly;
+    /* padding: 1.5rem; */
+}
+.show-card .card-img-top{
+    width: 100%;
+    margin-top: 0px !important;
+    /* margin: 0rem 1rem 0rem 1rem; */
+}
+
+/*reviews*/
+.reviews{
+    margin: 2rem;
+}
+.reviews div{
+    margin-bottom: 2rem;
+}
+.review-heading{
+    margin-bottom: 2rem;
+}
+.display-review{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.individual-review{
+    border: 0.5px solid lightgray;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(211, 211, 211, 0.2);
+    margin: 1rem;
+}
+.all-review-container{
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* signup */
+.signup form{
+    display: flex;
+    flex-direction: column;
+}
+.signup form button{
+    align-self: center;
+}
+
+/* login */
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+.login form button{
+    align-self: center;
+}
+
+
+/* map */
+#map{
+    height: 50vh;
+    width: 50vw;
+}
